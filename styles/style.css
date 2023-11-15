@@ -19,13 +19,58 @@ body {
 }
 
 @media only screen and (max-width: 768px){
-    .body{
+    body{
         width: 100%;
         grid-template-columns: 1fr;
         padding: 3rem;
         gap: 7rem;
     }
 }
+@media only screen and (max-width: 768px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header{
+        padding: 2rem 1 rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    footer {
+        display: flex;
+        height: 150px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #outputdiv {
+    
+        height: 100px;
+        width: 300px;
+        background-color: #FFF;
+        color: black;
+        font-size: 1.25rem;
+        align-self: center;
+        padding:1rem;
+        border-radius: 1rem;
+        margin-right: 1rem;
+        display: none;
+        
+    }
+}
+
 
 main {
     display: flex;
@@ -39,7 +84,7 @@ header {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 h1 {
@@ -159,14 +204,6 @@ fieldset{
     cursor: pointer;
 }
 
-
-footer {
-    display: flex;
-    height: 150px;
-    width: 100%;
-    justify-content: center;
-}
-
 #outputdiv {
     
     height: 100px;
@@ -181,4 +218,15 @@ footer {
     display: none;
     
 }
+
+footer {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+
+}
+
 
