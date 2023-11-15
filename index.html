@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>STATLIGA TELEVISIONKANALEN</h1>
+    </header>
+    <main>
+        <fieldset class="fieldset-skriv">
+            <legend id="program-information">Program information</legend>
+            <form id="programform">
+                <input type="text" id="program-input" placeholder="Skriv ner en film titel" tabindex="1"/>
+                <select type="number" id="age" placeholder="Fyll i ålder" tabindex="2">
+                    <option value="fyll i din ålder">Fyll i ålder</option>
+                    <option value="7">+7</option>
+                    <option value="11">+11</option>
+                    <option value="15">+15</option>
+                    <option value="18">+18</option>
+                <input type="text" id="beskrivning-input" placeholder="beskrivning av program" tabindex="3"/>
+                <input type="submit" id="program-submit" value="Lägg till" onclick = "saveData()" tabindex="4" />     
+        </fieldset>
+        <input type="submit" id="program-saved" value="Visa sparade titlar" onclick ="showData()" tabindex="5"/>
+        </form>
+            <fieldset class="fieldset-search">
+             <legend id="sök-program"> Sök program</legend>
+                <div id="container">
+                    <input id="sökfält" type="text" placeholder="Sök program" tabindex="6"></input> 
+                        <div id="ikon">
+                            
+                        </div> 
+                    </div>
+             </fieldset>
+        <input type="submit" id="clear-program" value="Rensa sparade titlar" onclick ="clearStorage()" tabindex="7"/>
+    </main>
+    <footer>
+        <div id="outputdiv">
+
+        </div>
+
+    </footer>
+       
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

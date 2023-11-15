@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+    font-family: 'fira sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+    background-image: url(/Media/curtain-1275200_1280.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    color: #FFF;
+
+}
+
+@media only screen and (max-width: 768px){
+    .body{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+header {
+    padding: 2rem 1 rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center
+}
+
+h1 {
+     font-size: 2.5rem;
+     font-weight: 0;
+     margin-top: 1rem; 
+     margin-bottom: 1rem;
+     
+}
+
+form {
+    display: flex;
+}
+
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none; 
+}
+
+
+
+#program-input {
+    flex: 1 1 0%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: black;
+    font-size: 1.25rem;
+}
+
+#age {
+    flex: 1 1 0%; 
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: black;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+#beskrivning-input {
+flex: 1 1 0%;
+background-color: white;
+padding:1rem;
+border-radius: 1rem;
+margin-right: 1rem;
+font-size: 1.25rem;
+flex-wrap: wrap;
+}
+
+#program-submit {
+    color: red;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, white, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4;
+}
+
+fieldset{
+    border-radius: 1rem;
+    height: 100px;
+    font-size: 1rem;
+}
+
+#program-saved {
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+#container{
+    display: flex;
+    
+}
+
+#sökfält{
+    flex: 1 1 0%; 
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: black;
+    font-size: 1.25rem;
+    align-self: center;
+}
+
+#ikon{
+    background-image: url(/Media/icons8-search-50.png);
+    height: 50px;
+    width: 50px;
+    aspect-ratio: 1;
+    cursor: pointer;
+    color: white;
+    
+
+}
+
+#clear-program {
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+
+footer {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+}
+
+#outputdiv {
+    
+    height: 100px;
+    width: 300px;
+    background-color: #FFF;
+    color: black;
+    font-size: 1.25rem;
+    align-self: center;
+    padding:1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    display: none;
+    
+}
+
